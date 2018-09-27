@@ -1,0 +1,190 @@
+/* Media Queries */
+
+@media only screen and (max-width: 728px) {
+    .aboutPage {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolioCard {
+        width: 100%;
+    }
+    
+    #navbar {
+        justify-content: center;
+        padding: 0.1em 2% 0.1em 2%;
+    }
+}
+
+@media only screen and (min-width: 728px) {
+    .aboutPage {
+        flex-direction: row;
+    }
+
+    .portfolioCard {
+        width: 500px;
+    }
+
+    #navbar {
+        justify-content: space-evenly;
+        padding: 0.1em 200px 0.1em 200px;
+    }
+}
+
+/* HTML Tags */
+
+ul {
+    margin: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: rgb(243, 232, 212);
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+// footer {
+//     display: flex;
+//     flex-direction: column;
+//     font-size: 16px;
+//     color: crimson;
+//     background-image: linear-gradient(rgb(243, 232, 212), rgb(218, 203, 176));
+//     text-align: center;
+//     padding: 10px;
+// }
+
+img {
+    display: flex;
+}
+
+/* Ids */
+
+#aboutText {
+    padding-left: 10px;
+    max-width: 500px;
+    height: auto;
+    overflow: scroll;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: crimson;
+    font-size: 22px;
+    color: rgb(243, 232, 212);
+}
+
+#portfolioPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#portfolios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+#profilePic {
+    width: 300px;
+    height: auto;
+}
+
+#projectTitle {
+    font-size: 32px;
+    padding: 10px;
+}
+
+#title {
+    background-color: crimson;
+    font-size: 36px;
+    color: rgb(243, 232, 212);
+    text-align: center;
+    padding: 0.1em 20px 0.1em 20px;
+}
+
+/* Classes */
+
+.aboutPage {
+    display: flex;
+}
+
+.active {
+    color: crimson !important;
+    background-color: rgb(243, 232, 212);
+    border-radius: 4px 4px 0px 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    color: rgb(59, 59, 59);
+    padding: 10px;
+}
+
+.portfolioCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+    height: auto;
+    color: rgb(243, 232, 212);
+    margin-bottom: 10px;
+}
+
+.portfolioItem {
+    display: flex;
+    flex-direction: column;
+    color: crimson;
+    height: auto;
+    max-width: 500px;
+}
+
+.projectText {
+    height: auto;
+    color: rgb(243, 232, 212);
+    overflow: wrap;
+    padding: 10px;
+}
+
+.text {
+    height: auto;
+    color: rgb(59, 59, 59);
+    padding: 0px 10px 10px 10px;
+}
+
+.navitem {
+    margin-top: 5px;
+}
+
+.navitem a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(243, 232, 212);
+    width: auto;
+    padding: 5px 5px 3px 5px;
+}
+
+.navitem a:hover {
+    color: rgb(129, 27, 47);
+}
+
+.projectPic {
+    width: 100%;
+    height: auto;
+}

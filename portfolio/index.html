@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div id="portfolioPage">
+    <div class="text">
+        Here are some things that I've created!
+    </div>
+    <div id="portfolios">
+        {% 
+            include portfoliocard.html
+            title="Example Project 1"
+            description="This is an example portfolio card with an image. Normally a description of the project would go here."
+        %}
+        {% 
+            include portfoliocard.html
+            title="Example Project 2"
+            description="This is an example portfolio card with an image. Normally a description of the project would go here."
+        %}
+        {% 
+            include portfolioitem.html
+            title="Example Project 3"
+            description="This is an example portfolio item. Normally a description of the project would go here."
+        %}
+        {% 
+            include portfolioitem.html
+            title="Example Project 4"
+            description="This is an example portfolio item. Normally a description of the project would go here."
+        %}
+    </div>
+</div>

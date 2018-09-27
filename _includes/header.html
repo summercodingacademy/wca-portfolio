@@ -1,0 +1,6 @@
+<div id="title">Welcome to my Portfolio!</div>
+<ul id="navbar">
+    <li class="navitem" ><a href="/" {% if page.url == "/" %} class="active" {% endif %}>Home</a></li>
+    <li class="navitem" ><a href="/about" {% if page.url == "/about/" %} class="active" {% endif %}>About Me</a></li>
+    <li class="navitem" ><a href="/portfolio" {% if page.url == "/portfolio/" %} class="active" {% endif %}>Portfolio</a></li>
+</ul>
