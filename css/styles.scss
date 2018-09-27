@@ -64,6 +64,7 @@ body {
 
 img {
     display: flex;
+    max-width: 100%;
 }
 
 /* Ids */
@@ -73,6 +74,14 @@ img {
     max-width: 500px;
     height: auto;
     overflow: scroll;
+}
+
+#aboutTitle {
+    text-align: center;
+    font-size: 28px;
+    color: rgb(243, 232, 212);
+    background-color: crimson;
+    margin-bottom: 10px;
 }
 
 #navbar {
@@ -110,6 +119,7 @@ img {
 #title {
     background-color: crimson;
     font-size: 36px;
+    font-weight: bold;
     color: rgb(243, 232, 212);
     text-align: center;
     padding: 0.1em 20px 0.1em 20px;
