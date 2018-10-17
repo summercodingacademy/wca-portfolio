@@ -1,3 +1,11 @@
+/* Variables Containing Color */
+
+:root {
+    --main-color: crimson; 
+    --bg-color: rgb(243, 232, 212);
+    --text-color: rgb(59, 59, 59);
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 728px) {
@@ -45,22 +53,12 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
-    background-color: rgb(243, 232, 212);
+    background-color: var(--bg-color);
     padding: 0px;
     margin: 0px;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
 }
-
-// footer {
-//     display: flex;
-//     flex-direction: column;
-//     font-size: 16px;
-//     color: crimson;
-//     background-image: linear-gradient(rgb(243, 232, 212), rgb(218, 203, 176));
-//     text-align: center;
-//     padding: 10px;
-// }
 
 img {
     display: flex;
@@ -79,17 +77,17 @@ img {
 #aboutTitle {
     text-align: center;
     font-size: 28px;
-    color: rgb(243, 232, 212);
-    background-color: crimson;
+    color: var(--bg-color);
+    background-color: var(--main-color);
     margin-bottom: 10px;
 }
 
 #navbar {
     display: flex;
     flex-direction: row;
-    background-color: crimson;
+    background-color: var(--main-color);
     font-size: 22px;
-    color: rgb(243, 232, 212);
+    color: var(--bg-color);
 }
 
 #portfolioPage {
@@ -117,10 +115,10 @@ img {
 }
 
 #title {
-    background-color: crimson;
+    background-color: var(--main-color);
     font-size: 36px;
     font-weight: bold;
-    color: rgb(243, 232, 212);
+    color: var(--bg-color);
     text-align: center;
     padding: 0.1em 20px 0.1em 20px;
 }
@@ -132,8 +130,8 @@ img {
 }
 
 .active {
-    color: crimson !important;
-    background-color: rgb(243, 232, 212);
+    color: var(--main-color) !important;
+    background-color: var(--bg-color);
     border-radius: 4px 4px 0px 0px;
 }
 
@@ -142,7 +140,7 @@ img {
     flex-direction: column;
     height: auto;
     align-items: center;
-    color: rgb(59, 59, 59);
+    color: var(--text-color);
     padding: 10px;
 }
 
@@ -151,30 +149,30 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: crimson;
+    background-color: var(--main-color);
     height: auto;
-    color: rgb(243, 232, 212);
+    color: var(--bg-color);
     margin-bottom: 10px;
 }
 
 .portfolioItem {
     display: flex;
     flex-direction: column;
-    color: crimson;
+    color: var(--main-color);
     height: auto;
     max-width: 500px;
 }
 
 .projectText {
     height: auto;
-    color: rgb(243, 232, 212);
+    color: var(--bg-color);
     overflow: wrap;
     padding: 10px;
 }
 
 .text {
     height: auto;
-    color: rgb(59, 59, 59);
+    color: var(--text-color);
     padding: 0px 10px 10px 10px;
 }
 
@@ -185,13 +183,13 @@ img {
 .navitem a {
     text-decoration: none;
     cursor: pointer;
-    color: rgb(243, 232, 212);
+    color: var(--bg-color);
     width: auto;
     padding: 5px 5px 3px 5px;
 }
 
 .navitem a:hover {
-    color: rgb(129, 27, 47);
+    opacity: 0.5;
 }
 
 .projectPic {
